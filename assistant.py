@@ -1,6 +1,6 @@
 from openai import OpenAI
 
-client = OpenAI(api_key="")
+openai.api_key = 'sk-'
 
 my_assistant = client.beta.assistants.create(
     instructions="You are an astronomy teacher. When asked a question, answer the question with astronomy facts.",

@@ -1,6 +1,6 @@
 from openai import OpenAI
 
-client = OpenAI(api_key="")
+openai.api_key = 'sk-'
 
 assistant_file = client.beta.assistants.files.create(
   assistant_id="astro_joe",
