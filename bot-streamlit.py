@@ -1,7 +1,8 @@
+import os
 import openai
 import streamlit as st
 
-openai.api_key = 'sk-'
+openai.api_key = os.getenv('OPENAI_API_KEY')
 
 st.title("Astro Joe")
 st.write("***")
